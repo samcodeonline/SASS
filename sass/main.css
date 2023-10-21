@@ -1,0 +1,42 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.main_header {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 255, 0.503);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.main_header h1 {
+  color: rgba(0, 0, 255, 0.503);
+  font-size: 10rem;
+  letter-spacing: 0.5rem;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.main_header h1:hover {
+  color: white;
+}
+.main_header h1::after {
+  content: "Channel";
+}
+.main_header p {
+  color: rgba(0, 0, 255, 0.503);
+  font-size: 10rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.main_header p:hover {
+  color: purple;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,55 @@
+@import "variables";
+@import "mixing";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+// Super powers of scss
+
+// 1.operators
+// 2.variables
+// 3.nesting
+// 4.mixing
+// 5.parameters
+// 6.partials(differentPages for diff porps)
+
+$font-size: 5rem +1rem;
+
+
+html{
+    font-size: 62.5%;
+}
+
+
+.main_header{
+    width: 100vw;
+    height: 100vh;
+    background: $bg-color;
+    @include flexProps;
+   
+
+    h1{
+        @include commonFontCode(0.5rem,capitalize);
+        
+        &:hover{
+            color: white;
+        }
+
+        &::after{
+            content: "Channel";
+        }
+    }
+
+    
+    p{
+        @include commonFontCode(0.1rem,uppercase);
+        &:hover{
+            color: purple;
+        }
+    }
+
+}
+
